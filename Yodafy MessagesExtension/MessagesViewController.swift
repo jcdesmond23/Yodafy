@@ -2,13 +2,50 @@
 //  MessagesViewController.swift
 //  Yodafy MessagesExtension
 //
-//  Created by Jack Desmond on 2/13/22.
+//  Created by Jack Desmond on 12/30/21.
 //
 
 import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
+    @IBOutlet weak var AppTitle: UILabel!
+    @IBOutlet weak var Description: UILabel!
+    @IBOutlet weak var TextInput: UITextField!
+
+    @IBAction func TranslateButton(_ sender: Any) {
+        let userInput: String = TextInput.text!
+        
+        //Building URL
+        let API_KEY = "hqnh9TE6aSmYZ0LfWNnFWAeF"
+        let encodedText = userInput.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let resourceString = "https://api.funtranslations.com/translate/yoda.json?X-Funtranslations-Api-Secret:\(API_KEY)&text=\(encodedText)"
+        let resourceURL = URL(string: resourceString)
+        guard resourceURL != nil else {return}
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: resourceURL!) { (data, response, error) in
+            //Check for errors
+            if error == nil && data != nil {
+                //Parse JSON
+                let decoder = JSONDecoder()
+                
+                do {
+                    let welcome = try decoder.decode(Welcome.self, from: data!)
+                    let contents = welcome.contents
+                    let translation = contents.translated
+                    
+                    //Sending translated text to iMessage textfield
+                    self.activeConversation?.insertText(translation, completionHandler: nil)
+                }
+                catch {
+                    print(error)
+                }
+            }
+        }
+        //Make the API call
+        dataTask.resume()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

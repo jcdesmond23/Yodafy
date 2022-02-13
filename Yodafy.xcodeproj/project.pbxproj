@@ -7,32 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B7747F427B9AD1200B6B380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7747F327B9AD1200B6B380 /* Assets.xcassets */; };
-		7B7747FA27B9AD1300B6B380 /* Yodafy MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B7747F927B9AD1300B6B380 /* Yodafy MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7B7747FF27B9AD1300B6B380 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7747FE27B9AD1300B6B380 /* Messages.framework */; };
-		7B77480227B9AD1300B6B380 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77480127B9AD1300B6B380 /* MessagesViewController.swift */; };
-		7B77480527B9AD1300B6B380 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B77480327B9AD1300B6B380 /* MainInterface.storyboard */; };
-		7B77480727B9AD1500B6B380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B77480627B9AD1500B6B380 /* Assets.xcassets */; };
+		7B203CDC277E70460015C8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B203CDB277E70460015C8AE /* Assets.xcassets */; };
+		7B203CE2277E70470015C8AE /* Yodafy MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B203CE1277E70470015C8AE /* Yodafy MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B203CE7277E70470015C8AE /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B203CE6277E70470015C8AE /* Messages.framework */; };
+		7B203CED277E70470015C8AE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B203CEB277E70470015C8AE /* MainInterface.storyboard */; };
+		7B203CEF277E70480015C8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B203CEE277E70480015C8AE /* Assets.xcassets */; };
+		7B7747AF27B332A500B6B380 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B203CE9277E70470015C8AE /* MessagesViewController.swift */; };
+		7B7747B027B33A8900B6B380 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B203CEB277E70470015C8AE /* MainInterface.storyboard */; };
+		7B7747B227B377DA00B6B380 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7747B127B377DA00B6B380 /* Translation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B7747FB27B9AD1300B6B380 /* PBXContainerItemProxy */ = {
+		7B203CE3277E70470015C8AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B7747EA27B9AD0B00B6B380 /* Project object */;
+			containerPortal = 7B203CD2277E70420015C8AE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B7747F827B9AD1300B6B380;
+			remoteGlobalIDString = 7B203CE0277E70470015C8AE;
 			remoteInfo = "Yodafy MessagesExtension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7B77480E27B9AD1500B6B380 /* Embed App Extensions */ = {
+		7B203CF6277E70480015C8AE /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7B7747FA27B9AD1300B6B380 /* Yodafy MessagesExtension.appex in Embed App Extensions */,
+				7B203CE2277E70470015C8AE /* Yodafy MessagesExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,70 +42,72 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B7747F027B9AD0B00B6B380 /* Yodafy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yodafy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7747F327B9AD1200B6B380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B7747F927B9AD1300B6B380 /* Yodafy MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yodafy MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7747FE27B9AD1300B6B380 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		7B77480127B9AD1300B6B380 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		7B77480427B9AD1300B6B380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		7B77480627B9AD1500B6B380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B77480827B9AD1500B6B380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B203CD8277E70420015C8AE /* Yodafy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yodafy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B203CDB277E70460015C8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B203CE1277E70470015C8AE /* Yodafy MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yodafy MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B203CE6277E70470015C8AE /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		7B203CE9277E70470015C8AE /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		7B203CEC277E70470015C8AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7B203CEE277E70480015C8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B203CF0277E70480015C8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7747B127B377DA00B6B380 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B7747F627B9AD1300B6B380 /* Frameworks */ = {
+		7B203CDE277E70470015C8AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7747FF27B9AD1300B6B380 /* Messages.framework in Frameworks */,
+				7B203CE7277E70470015C8AE /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B7747E927B9AD0B00B6B380 = {
+		7B203CD1277E70420015C8AE = {
 			isa = PBXGroup;
 			children = (
-				7B7747F227B9AD0B00B6B380 /* Yodafy */,
-				7B77480027B9AD1300B6B380 /* Yodafy MessagesExtension */,
-				7B7747FD27B9AD1300B6B380 /* Frameworks */,
-				7B7747F127B9AD0B00B6B380 /* Products */,
+				7B203CDA277E70420015C8AE /* Yodafy */,
+				7B203CE8277E70470015C8AE /* Yodafy MessagesExtension */,
+				7B203CE5277E70470015C8AE /* Frameworks */,
+				7B203CD9277E70420015C8AE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B7747F127B9AD0B00B6B380 /* Products */ = {
+		7B203CD9277E70420015C8AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B7747F027B9AD0B00B6B380 /* Yodafy.app */,
-				7B7747F927B9AD1300B6B380 /* Yodafy MessagesExtension.appex */,
+				7B203CD8277E70420015C8AE /* Yodafy.app */,
+				7B203CE1277E70470015C8AE /* Yodafy MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B7747F227B9AD0B00B6B380 /* Yodafy */ = {
+		7B203CDA277E70420015C8AE /* Yodafy */ = {
 			isa = PBXGroup;
 			children = (
-				7B7747F327B9AD1200B6B380 /* Assets.xcassets */,
+				7B203CDB277E70460015C8AE /* Assets.xcassets */,
 			);
 			path = Yodafy;
 			sourceTree = "<group>";
 		};
-		7B7747FD27B9AD1300B6B380 /* Frameworks */ = {
+		7B203CE5277E70470015C8AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B7747FE27B9AD1300B6B380 /* Messages.framework */,
+				7B203CE6277E70470015C8AE /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B77480027B9AD1300B6B380 /* Yodafy MessagesExtension */ = {
+		7B203CE8277E70470015C8AE /* Yodafy MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				7B77480127B9AD1300B6B380 /* MessagesViewController.swift */,
-				7B77480327B9AD1300B6B380 /* MainInterface.storyboard */,
-				7B77480627B9AD1500B6B380 /* Assets.xcassets */,
-				7B77480827B9AD1500B6B380 /* Info.plist */,
+				7B203CE9277E70470015C8AE /* MessagesViewController.swift */,
+				7B7747B127B377DA00B6B380 /* Translation.swift */,
+				7B203CEB277E70470015C8AE /* MainInterface.storyboard */,
+				7B203CEE277E70480015C8AE /* Assets.xcassets */,
+				7B203CF0277E70480015C8AE /* Info.plist */,
 			);
 			path = "Yodafy MessagesExtension";
 			sourceTree = "<group>";
@@ -111,30 +115,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B7747EF27B9AD0B00B6B380 /* Yodafy */ = {
+		7B203CD7277E70420015C8AE /* Yodafy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B77480F27B9AD1500B6B380 /* Build configuration list for PBXNativeTarget "Yodafy" */;
+			buildConfigurationList = 7B203CF7277E70480015C8AE /* Build configuration list for PBXNativeTarget "Yodafy" */;
 			buildPhases = (
-				7B7747EE27B9AD0B00B6B380 /* Resources */,
-				7B77480E27B9AD1500B6B380 /* Embed App Extensions */,
+				7B203CD6277E70420015C8AE /* Resources */,
+				7B203CF6277E70480015C8AE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B7747FC27B9AD1300B6B380 /* PBXTargetDependency */,
+				7B203CE4277E70470015C8AE /* PBXTargetDependency */,
 			);
 			name = Yodafy;
 			productName = Yodafy;
-			productReference = 7B7747F027B9AD0B00B6B380 /* Yodafy.app */;
+			productReference = 7B203CD8277E70420015C8AE /* Yodafy.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
-		7B7747F827B9AD1300B6B380 /* Yodafy MessagesExtension */ = {
+		7B203CE0277E70470015C8AE /* Yodafy MessagesExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B77480B27B9AD1500B6B380 /* Build configuration list for PBXNativeTarget "Yodafy MessagesExtension" */;
+			buildConfigurationList = 7B203CF3277E70480015C8AE /* Build configuration list for PBXNativeTarget "Yodafy MessagesExtension" */;
 			buildPhases = (
-				7B7747F527B9AD1300B6B380 /* Sources */,
-				7B7747F627B9AD1300B6B380 /* Frameworks */,
-				7B7747F727B9AD1300B6B380 /* Resources */,
+				7B203CDD277E70470015C8AE /* Sources */,
+				7B203CDE277E70470015C8AE /* Frameworks */,
+				7B203CDF277E70470015C8AE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,28 +146,28 @@
 			);
 			name = "Yodafy MessagesExtension";
 			productName = "Yodafy MessagesExtension";
-			productReference = 7B7747F927B9AD1300B6B380 /* Yodafy MessagesExtension.appex */;
+			productReference = 7B203CE1277E70470015C8AE /* Yodafy MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B7747EA27B9AD0B00B6B380 /* Project object */ = {
+		7B203CD2277E70420015C8AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					7B7747EF27B9AD0B00B6B380 = {
+					7B203CD7277E70420015C8AE = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					7B7747F827B9AD1300B6B380 = {
+					7B203CE0277E70470015C8AE = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 7B7747ED27B9AD0B00B6B380 /* Build configuration list for PBXProject "Yodafy" */;
+			buildConfigurationList = 7B203CD5277E70420015C8AE /* Build configuration list for PBXProject "Yodafy" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,61 +175,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 7B7747E927B9AD0B00B6B380;
-			productRefGroup = 7B7747F127B9AD0B00B6B380 /* Products */;
+			mainGroup = 7B203CD1277E70420015C8AE;
+			productRefGroup = 7B203CD9277E70420015C8AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B7747EF27B9AD0B00B6B380 /* Yodafy */,
-				7B7747F827B9AD1300B6B380 /* Yodafy MessagesExtension */,
+				7B203CD7277E70420015C8AE /* Yodafy */,
+				7B203CE0277E70470015C8AE /* Yodafy MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B7747EE27B9AD0B00B6B380 /* Resources */ = {
+		7B203CD6277E70420015C8AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7747F427B9AD1200B6B380 /* Assets.xcassets in Resources */,
+				7B203CDC277E70460015C8AE /* Assets.xcassets in Resources */,
+				7B7747B027B33A8900B6B380 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B7747F727B9AD1300B6B380 /* Resources */ = {
+		7B203CDF277E70470015C8AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B77480727B9AD1500B6B380 /* Assets.xcassets in Resources */,
-				7B77480527B9AD1300B6B380 /* MainInterface.storyboard in Resources */,
+				7B203CEF277E70480015C8AE /* Assets.xcassets in Resources */,
+				7B203CED277E70470015C8AE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B7747F527B9AD1300B6B380 /* Sources */ = {
+		7B203CDD277E70470015C8AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B77480227B9AD1300B6B380 /* MessagesViewController.swift in Sources */,
+				7B7747AF27B332A500B6B380 /* MessagesViewController.swift in Sources */,
+				7B7747B227B377DA00B6B380 /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B7747FC27B9AD1300B6B380 /* PBXTargetDependency */ = {
+		7B203CE4277E70470015C8AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B7747F827B9AD1300B6B380 /* Yodafy MessagesExtension */;
-			targetProxy = 7B7747FB27B9AD1300B6B380 /* PBXContainerItemProxy */;
+			target = 7B203CE0277E70470015C8AE /* Yodafy MessagesExtension */;
+			targetProxy = 7B203CE3277E70470015C8AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B77480327B9AD1300B6B380 /* MainInterface.storyboard */ = {
+		7B203CEB277E70470015C8AE /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B77480427B9AD1300B6B380 /* Base */,
+				7B203CEC277E70470015C8AE /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -233,7 +239,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7B77480927B9AD1500B6B380 /* Debug */ = {
+		7B203CF1277E70480015C8AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		7B77480A27B9AD1500B6B380 /* Release */ = {
+		7B203CF2277E70480015C8AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,7 +355,7 @@
 			};
 			name = Release;
 		};
-		7B77480C27B9AD1500B6B380 /* Debug */ = {
+		7B203CF4277E70480015C8AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -375,7 +381,7 @@
 			};
 			name = Debug;
 		};
-		7B77480D27B9AD1500B6B380 /* Release */ = {
+		7B203CF5277E70480015C8AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -401,7 +407,7 @@
 			};
 			name = Release;
 		};
-		7B77481027B9AD1500B6B380 /* Debug */ = {
+		7B203CF8277E70480015C8AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -422,7 +428,7 @@
 			};
 			name = Debug;
 		};
-		7B77481127B9AD1500B6B380 /* Release */ = {
+		7B203CF9277E70480015C8AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -446,34 +452,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B7747ED27B9AD0B00B6B380 /* Build configuration list for PBXProject "Yodafy" */ = {
+		7B203CD5277E70420015C8AE /* Build configuration list for PBXProject "Yodafy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B77480927B9AD1500B6B380 /* Debug */,
-				7B77480A27B9AD1500B6B380 /* Release */,
+				7B203CF1277E70480015C8AE /* Debug */,
+				7B203CF2277E70480015C8AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B77480B27B9AD1500B6B380 /* Build configuration list for PBXNativeTarget "Yodafy MessagesExtension" */ = {
+		7B203CF3277E70480015C8AE /* Build configuration list for PBXNativeTarget "Yodafy MessagesExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B77480C27B9AD1500B6B380 /* Debug */,
-				7B77480D27B9AD1500B6B380 /* Release */,
+				7B203CF4277E70480015C8AE /* Debug */,
+				7B203CF5277E70480015C8AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B77480F27B9AD1500B6B380 /* Build configuration list for PBXNativeTarget "Yodafy" */ = {
+		7B203CF7277E70480015C8AE /* Build configuration list for PBXNativeTarget "Yodafy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B77481027B9AD1500B6B380 /* Debug */,
-				7B77481127B9AD1500B6B380 /* Release */,
+				7B203CF8277E70480015C8AE /* Debug */,
+				7B203CF9277E70480015C8AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7B7747EA27B9AD0B00B6B380 /* Project object */;
+	rootObject = 7B203CD2277E70420015C8AE /* Project object */;
 }

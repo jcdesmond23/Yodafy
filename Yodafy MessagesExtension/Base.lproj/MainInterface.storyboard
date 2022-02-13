@@ -1,37 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="Yodafy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try talking like Yoda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-sQ-9K9">
+                                <rect key="frame" x="103.5" y="181" width="113" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="1jx-5Z-rAE"/>
+                                    <constraint firstAttribute="width" constant="113" id="70X-F6-u24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oEL-4I-8xB">
+                                <rect key="frame" x="64" y="208" width="192" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="fwd-12-6Hd"/>
+                                    <constraint firstAttribute="height" constant="60" id="tth-eO-h5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yodafy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
+                                <rect key="frame" x="133.5" y="157" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BC8-BC-9Ks"/>
+                                    <constraint firstAttribute="width" constant="53" id="mFB-dx-3uG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moC-8w-TDE">
+                                <rect key="frame" x="110.5" y="284" width="99" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="SSK-9B-vrt"/>
+                                    <constraint firstAttribute="width" constant="99" id="vm2-cg-Mc0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Translate">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TranslateButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="F5D-67-Bzi"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="-26" id="7aB-eN-IAu"/>
+                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="-26" id="7bq-uv-i3M"/>
+                            <constraint firstItem="oEL-4I-8xB" firstAttribute="top" secondItem="mLj-sQ-9K9" secondAttribute="bottom" constant="4" id="Ahs-1g-6YI"/>
+                            <constraint firstItem="moC-8w-TDE" firstAttribute="top" secondItem="oEL-4I-8xB" secondAttribute="bottom" constant="16" id="UVc-Jy-6ey"/>
+                            <constraint firstItem="moC-8w-TDE" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="WJe-C5-6HT"/>
+                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="YFa-e3-MqY"/>
+                            <constraint firstItem="mLj-sQ-9K9" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="YPY-2e-dao"/>
+                            <constraint firstItem="d1e-fi-ked" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="rLE-68-F1g"/>
+                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="uGs-ma-6PJ"/>
+                            <constraint firstItem="mLj-sQ-9K9" firstAttribute="top" secondItem="d1e-fi-ked" secondAttribute="bottom" constant="3" id="yae-SL-RPC"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="TextInput" destination="oEL-4I-8xB" id="Wdv-tC-ebv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
