@@ -1,7 +1,7 @@
 # Yodafy-2.0
-DALI API Developer Challenge:
+Purpose:
 
-This iMessage was built as a part of my application to the DALI lab at Dartmouth College. The app idea was sparked by the API challenge on the application.
+This iMessage was built as a part of my application to the DALI lab at Dartmouth College. The app idea was sparked by the API challenge on the application. This was my first time ever using Swift and developing an ios application. I faced several challenges in creating Yodafy, but the process was extremely rewarding.
 
 About the App:
 
