@@ -9,10 +9,12 @@ import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
+    //UI
     @IBOutlet weak var AppTitle: UILabel!
     @IBOutlet weak var Description: UILabel!
     @IBOutlet weak var TextInput: UITextField!
 
+    //called when translated button is pressed
     @IBAction func TranslateButton(_ sender: Any) {
         let userInput: String = TextInput.text!
         
