@@ -15,6 +15,7 @@
 		7B7747AF27B332A500B6B380 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B203CE9277E70470015C8AE /* MessagesViewController.swift */; };
 		7B7747B027B33A8900B6B380 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B203CEB277E70470015C8AE /* MainInterface.storyboard */; };
 		7B7747B227B377DA00B6B380 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7747B127B377DA00B6B380 /* Translation.swift */; };
+		7BD5BAE027ED867B0050E7D1 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5BADF27ED867B0050E7D1 /* TranslateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7B203CEE277E70480015C8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B203CF0277E70480015C8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B7747B127B377DA00B6B380 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		7BD5BADF27ED867B0050E7D1 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				7B203CE9277E70470015C8AE /* MessagesViewController.swift */,
+				7BD5BADF27ED867B0050E7D1 /* TranslateViewController.swift */,
 				7B7747B127B377DA00B6B380 /* Translation.swift */,
 				7B203CEB277E70470015C8AE /* MainInterface.storyboard */,
 				7B203CEE277E70480015C8AE /* Assets.xcassets */,
@@ -214,6 +217,7 @@
 			files = (
 				7B7747AF27B332A500B6B380 /* MessagesViewController.swift in Sources */,
 				7B7747B227B377DA00B6B380 /* Translation.swift in Sources */,
+				7BD5BAE027ED867B0050E7D1 /* TranslateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

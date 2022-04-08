@@ -1,95 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ZZ-9O-cEF">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Messages View Controller-->
-        <scene sceneID="7MM-of-jgj">
+        <scene sceneID="Ahw-bI-neL">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="Yodafy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                <viewController id="5ZZ-9O-cEF" customClass="MessagesViewController" customModule="Yodafy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWa-AV-BHV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try talking like Yoda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-sQ-9K9">
-                                <rect key="frame" x="103.5" y="181" width="113" height="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZF-nv-6sA">
+                                <rect key="frame" x="76.666666666666686" y="271" width="167" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="1jx-5Z-rAE"/>
-                                    <constraint firstAttribute="width" constant="113" id="70X-F6-u24"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oEL-4I-8xB">
-                                <rect key="frame" x="64" y="208" width="192" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="192" id="fwd-12-6Hd"/>
-                                    <constraint firstAttribute="height" constant="60" id="tth-eO-h5g"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yodafy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <rect key="frame" x="133.5" y="157" width="53" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="BC8-BC-9Ks"/>
-                                    <constraint firstAttribute="width" constant="53" id="mFB-dx-3uG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moC-8w-TDE">
-                                <rect key="frame" x="110.5" y="284" width="99" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="SSK-9B-vrt"/>
-                                    <constraint firstAttribute="width" constant="99" id="vm2-cg-Mc0"/>
+                                    <constraint firstAttribute="width" secondItem="DZF-nv-6sA" secondAttribute="height" multiplier="167:35" id="c6h-5o-8aq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Translate">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                    <color key="baseBackgroundColor" red="0.48166352509999999" green="0.57115072010000001" blue="0.33721274140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Translating" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.95470434429999995" green="0.72528630500000002" blue="0.3803085685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="TranslateButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="F5D-67-Bzi"/>
+                                    <segue destination="wvZ-cf-eSC" kind="presentation" identifier="StartTranslating" destinationCreationSelector="StartButtonTapped:" modalPresentationStyle="fullScreen" id="3jj-He-Bok"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yodafy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeA-6f-zrg">
+                                <rect key="frame" x="63" y="173" width="142" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CeA-6f-zrg" secondAttribute="height" multiplier="142:49" id="OfO-0t-0f8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="1024-removebg-preview-2" translatesAutoresizingMaskIntoConstraints="NO" id="Pks-FH-sMT">
+                                <rect key="frame" x="209" y="174" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pks-FH-sMT" secondAttribute="height" multiplier="1:1" id="Uz4-UD-qe9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try talking like Yoda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npm-ee-dii">
+                                <rect key="frame" x="64" y="230" width="192" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="npm-ee-dii" secondAttribute="height" multiplier="192:23" id="bzJ-nc-12n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="IHt-xy-d9A"/>
+                        <color key="backgroundColor" red="0.43880305841695499" green="0.82090979507288986" blue="0.3869741804331881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="-26" id="7aB-eN-IAu"/>
-                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="-26" id="7bq-uv-i3M"/>
-                            <constraint firstItem="oEL-4I-8xB" firstAttribute="top" secondItem="mLj-sQ-9K9" secondAttribute="bottom" constant="4" id="Ahs-1g-6YI"/>
-                            <constraint firstItem="moC-8w-TDE" firstAttribute="top" secondItem="oEL-4I-8xB" secondAttribute="bottom" constant="16" id="UVc-Jy-6ey"/>
-                            <constraint firstItem="moC-8w-TDE" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="WJe-C5-6HT"/>
-                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="YFa-e3-MqY"/>
-                            <constraint firstItem="mLj-sQ-9K9" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="YPY-2e-dao"/>
-                            <constraint firstItem="d1e-fi-ked" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="rLE-68-F1g"/>
-                            <constraint firstItem="oEL-4I-8xB" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="uGs-ma-6PJ"/>
-                            <constraint firstItem="mLj-sQ-9K9" firstAttribute="top" secondItem="d1e-fi-ked" secondAttribute="bottom" constant="3" id="yae-SL-RPC"/>
+                            <constraint firstItem="Pks-FH-sMT" firstAttribute="centerY" secondItem="qWa-AV-BHV" secondAttribute="centerY" constant="-66" id="9lT-rK-bT9"/>
+                            <constraint firstItem="npm-ee-dii" firstAttribute="top" secondItem="Pks-FH-sMT" secondAttribute="bottom" constant="8" symbolic="YES" id="BK2-1x-3TX"/>
+                            <constraint firstItem="CeA-6f-zrg" firstAttribute="centerX" secondItem="qWa-AV-BHV" secondAttribute="centerX" constant="-26" id="DFF-rQ-lIO"/>
+                            <constraint firstItem="npm-ee-dii" firstAttribute="top" secondItem="CeA-6f-zrg" secondAttribute="bottom" constant="8" symbolic="YES" id="EhQ-JF-UQH"/>
+                            <constraint firstItem="npm-ee-dii" firstAttribute="centerY" secondItem="qWa-AV-BHV" secondAttribute="centerY" constant="-22.5" id="NlC-Da-uaB"/>
+                            <constraint firstItem="Pks-FH-sMT" firstAttribute="centerX" secondItem="qWa-AV-BHV" secondAttribute="centerX" constant="73" id="OJ8-qI-9A7"/>
+                            <constraint firstItem="Pks-FH-sMT" firstAttribute="leading" secondItem="CeA-6f-zrg" secondAttribute="trailing" constant="4" id="Zqg-ZU-PtJ"/>
+                            <constraint firstItem="npm-ee-dii" firstAttribute="top" secondItem="Pks-FH-sMT" secondAttribute="bottom" constant="8" symbolic="YES" id="bil-bL-ht4"/>
+                            <constraint firstItem="DZF-nv-6sA" firstAttribute="centerX" secondItem="qWa-AV-BHV" secondAttribute="centerX" id="nTk-9d-Wbo"/>
+                            <constraint firstItem="npm-ee-dii" firstAttribute="centerX" secondItem="qWa-AV-BHV" secondAttribute="centerX" id="skb-aX-azp"/>
+                            <constraint firstItem="Pks-FH-sMT" firstAttribute="leading" secondItem="CeA-6f-zrg" secondAttribute="trailing" constant="4" id="t7T-Z4-iXR"/>
+                            <constraint firstItem="DZF-nv-6sA" firstAttribute="top" secondItem="npm-ee-dii" secondAttribute="bottom" constant="18" id="xCx-8j-zLs"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
-                        <outlet property="TextInput" destination="oEL-4I-8xB" id="Wdv-tC-ebv"/>
+                        <outlet property="Description" destination="npm-ee-dii" id="gXO-Va-nHX"/>
+                        <outlet property="YodifyImage" destination="Pks-FH-sMT" id="xLO-Rr-jMW"/>
+                        <outlet property="YodifyTitle" destination="CeA-6f-zrg" id="lgf-z0-vAN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvs-Xr-pf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+            <point key="canvasLocation" x="-828.98550724637687" y="-17.410714285714285"/>
+        </scene>
+        <!--Translate View Controller-->
+        <scene sceneID="mQ4-WF-aXo">
+            <objects>
+                <viewController storyboardIdentifier="translate_vc" id="wvZ-cf-eSC" customClass="TranslateViewController" customModule="Yodafy_MessagesExtension" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyM-Q6-QHO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBu-0z-Gq5">
+                                <rect key="frame" x="64" y="149.33333333333334" width="192" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7CU-JQ-wML"/>
+                                    <constraint firstAttribute="width" constant="192" id="fAm-Yn-QNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="expandViewTextFieldTap:" destination="wvZ-cf-eSC" eventType="editingDidBegin" id="Nsr-Kb-Gu4"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED0-lO-Ppa">
+                                <rect key="frame" x="109" y="226.33333333333334" width="102.33333333333331" height="35.000000000000028"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ED0-lO-Ppa" secondAttribute="height" multiplier="102:35" id="GKv-0i-llw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Translate" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.95470434429999995" green="0.72528630500000002" blue="0.3803085685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TranslateButtonTap:" destination="wvZ-cf-eSC" eventType="touchUpInside" id="mDx-Qf-Ui6"/>
+                                    <segue destination="5ZZ-9O-cEF" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="hwc-tV-vGd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="1024-removebg-preview-2" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-BX-8Kw">
+                                <rect key="frame" x="130" y="82.333333333333329" width="60" height="59.999999999999986"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="138-ne-UZe"/>
+                                    <constraint firstAttribute="height" constant="60" id="tl1-Yl-JU9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BnX-aj-wPc"/>
+                        <color key="backgroundColor" red="0.43897396329999999" green="0.81982332469999997" blue="0.3881462812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nBu-0z-Gq5" firstAttribute="bottom" secondItem="ED0-lO-Ppa" secondAttribute="top" constant="-17" id="6BK-gz-NNx"/>
+                            <constraint firstItem="ED0-lO-Ppa" firstAttribute="centerX" secondItem="fyM-Q6-QHO" secondAttribute="centerX" id="6fj-kf-nqj"/>
+                            <constraint firstItem="nBu-0z-Gq5" firstAttribute="centerX" secondItem="fyM-Q6-QHO" secondAttribute="centerX" id="Dgs-od-wXm"/>
+                            <constraint firstItem="nBu-0z-Gq5" firstAttribute="top" secondItem="PvO-BX-8Kw" secondAttribute="bottom" constant="7" id="FZm-zE-hUQ"/>
+                            <constraint firstItem="nBu-0z-Gq5" firstAttribute="centerX" secondItem="fyM-Q6-QHO" secondAttribute="centerX" id="KrU-fU-4nn"/>
+                            <constraint firstItem="nBu-0z-Gq5" firstAttribute="centerY" secondItem="fyM-Q6-QHO" secondAttribute="centerY" multiplier="0.75" id="cPi-Mm-yab"/>
+                            <constraint firstItem="PvO-BX-8Kw" firstAttribute="centerX" secondItem="fyM-Q6-QHO" secondAttribute="centerX" id="egP-qd-gAI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iGs-7W-065"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="478"/>
+                    <connections>
+                        <outlet property="TextInput" destination="nBu-0z-Gq5" id="Wj6-cy-Vdd"/>
+                        <outlet property="TranslateButton" destination="ED0-lO-Ppa" id="MSX-jb-Atb"/>
+                        <outlet property="YodifyImage" destination="PvO-BX-8Kw" id="acc-en-MWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4I-NT-Ozc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="-17"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="1024-removebg-preview-2" width="301" height="291"/>
     </resources>
 </document>
