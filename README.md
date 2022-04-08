@@ -1,7 +1,7 @@
 # Yodafy
 Purpose:
 
-This iMessage app was built in order to learn swift. The app idea was sparked from the desire to text my friends effortlessly in a Yoda voice.
+This iMessage app was built in order to learn Swift. The app idea was sparked from the desire to text my friends effortlessly in a Yoda voice.
 
 About the App:
 
@@ -9,8 +9,10 @@ Yodafy is iMessage app to translate english into Yoda speak. The app UI consists
 
 Issues:
 
-The app is fully functional however the user experience is not perfect. The main problem is that the user cannot type into the text box while the app is in compact view. In order to use the app, the user must swipe up and put the app in expanded view. In addition, there is nothing to let the user know there input was translated. In order to see the translation, they must swipe down into compact mode.
+- Minor bugs with certain devices
+- Have not considered landscape mode UI issues.
 
 Future Plans:
 
-In the future, I plan to update Yodafy to fix the UX issues described above. In addition, I will be creating an app icon. I am also considering adding translations for more Star Wars characters to the app.
+- Building my own API for the translations.
+- Continuing to perfect UI
